@@ -1,22 +1,23 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap');
+
+
+  body {
     font-family: 'Raleway', sans-serif;
     margin: 0;
     padding: 0;
     
   }
   
-  h1 {
-    font-family: 'Raleway', sans-serif;   
+  h1 { 
     font-size: 22px;
     font-weight: bold;
-    
+    margin-top: 40px;    
   }
 
-  h1, h2, h3, h4, h5, h6{
-    font-family: 'Raleway', sans-serif;     
-  }
+  /* h2, h3, h4, h5, h6{    
+  } */
   
-  p {
+  p{
     color: #000000;
     font-size: 16px;
     font-weight: normal;
@@ -33,7 +34,7 @@ body {
     justify-content: space-between;
     margin: 0;
     padding: 0;
-    height: 45px;
+    
   }
 
   ul{    
@@ -44,72 +45,116 @@ body {
     padding: 0;
   }
 
- li{
-     padding-left: 65px;
+li{
+  padding-left: 65px;
+}
+
+a{
+  text-decoration: none;   
+}
+
+.textmenu{
+  font-size: 16px;
+}
+
+.textinscrire{
+  color: #0065FC ;
+  font-weight: bold;
+  }
+
+ 
+
+.soustitre1{
+  color: #0065FC;
  }
 
-  a{
-    text-decoration: none;   
-  }
-
-  .textmenu{
-      font-size: 16px;
-  }
-
-  .textinscrire{
-      color: #0065FC ;
-      font-weight: bold;
-  }
 
  /**Formulaire**/
 
- .formulaire {
-    display: flex;
+.formulaire {
+  display: flex;
  }
 
 .location{
-    background-color: #E5E5E5;
-    border-radius: 12px 0 0 12px;    
-    text-align: center;
-    width: 50px;  
-    height: 50px;
-    font-size: 1.1em;  
+  background-color: #E5E5E5;
+  border-radius: 12px 0 0 12px;    
+  text-align: center;
+  width: 50px;  
+  height: 50px;
+  font-size: 1.1em;  
 }
 
 .iconlocation{
-    padding-top: 15px;    
+  padding-top: 15px;    
 }
 
-
-
 .cageinput{
-    width: 220px;
-    border: solid 1px #E5E5E5;
-    padding-left: 15px;;
+  width: 220px;
+  border: solid 1px #E5E5E5;
+  padding-left: 15px;;
     
 }
 
 .rechercher{
-    width: 135px;
+  width: 135px;
 }
-
-
-
-
-
 
   /**Filtres**/
 
-  .filtres {
-    display: flex;
-    align-items: center; 
+.filtres {
+  display: flex;
+  align-items: center; 
 }
 
-  .plus {
-    display: flex;
-    align-items: center;
+.plus {
+  display: flex;
+  align-items: center;
 }
 
 
+/**Main section**/
 
+main{
+  margin-left: 45px;
+  margin-right: 45px;
+}
 
+#hebergement{    
+  display: flex;
+}
+
+.sectionGauche{
+  background-color: aliceblue;
+  width: 60%;
+}
+
+.imagesGauche{
+  display: flex;  
+  flex-wrap: wrap;
+}
+
+.sectionDroite{
+  background-color: rgb(240, 255, 249);
+  width: 40%;
+}
+
+.card{
+  width: 246px;
+  height: 300px;
+  background-color: #E5E5E5;
+}
+
+.photoHeb { 
+  width: 236px;
+}
+
+.carte2{
+  display: flex;
+}
+
+footer{
+  background-color:#F2F2F2;
+  display: flex;
+  justify-content: space-around;
+
+}
