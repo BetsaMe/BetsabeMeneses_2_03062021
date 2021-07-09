@@ -21,15 +21,13 @@
     <!-- Header -->
     <header>
       <nav>
-        <a href="index.html">
+        <a class="logo" href="index.html">
           <img src="images/logo/Reservia.svg" alt="logo" />
         </a>
-
-        <ul>
-          <li><a href="">Hébergements</a></li>
-          <li><a href="">Activités</a></li>
-          <li><a class="texteInscrire" href="">S'inscrire</a></li>
-        </ul>
+        <a class="menuItem" href="">Hébergements</a>
+        <a class="menuItem" href="">Activités</a>
+        <a class="texteInscrire" href="">S'inscrire</a>
+        
       </nav>
 
       <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
@@ -40,14 +38,11 @@
         <div class="location">
           <i class="fas fa-map-marker-alt"></i>
         </div>
-        <input
-          class="formInput"
-          type="text"
-          id=""
-          name=""
-          value="Marseille, France"
-        /><br />
-        <input class="rechercher" type="submit" value="Rechercher" />
+        <input class="formInput" type="text" id="" name="" value="Marseille, France"/>
+        <!-- <input class="rechercher" type="submit" value="Rechercher" /> -->
+        <button type="submit">
+          <i class="fas fa-search"></i><span>Rechercher</span>
+        </button>
       </form>
 
       <!-- Filtres -->
@@ -76,8 +71,9 @@
       </div>
 
       <p class="plus">
-        <i class="fas fa-info center"></i> Plus de 500 logements sont
-        disponibles dans cette ville
+        <i class="fas fa-info center"></i> 
+        <span>Plus de 500 logements sont disponibles dans cette ville</span> 
+        
       </p>
     </header>
        
@@ -236,9 +232,8 @@
       <section id="activites">
         <h2>Activités à Marseille</h2>
 
-        <a class="blocActivite" href="">
+        <a class="cardVieux" href="">
           <img
-            class="photo01"
             src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
             alt="cannebiere"
           />
@@ -246,27 +241,24 @@
         </a>
 
         <div class="blocActivite">
-          <a class="item-2" href="">
+          <a class="cardFort" href="">
             <img
-              class="photo02"
               src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
               alt="cannebiere"
             />
             <h3>Fort de Pomègues</h3>
           </a>
-          <a class="item-3" href="">
+          <a class="cardIles" href="">
             <img
-              class="photo03"
               src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
               alt="cannebiere"
             />
             <h3>Îles du Frioul</h3>
           </a>
-        </div>
+        </div> 
 
-        <a class="blocActivite" href="">
+        <a class="cardCalanque" href="">
           <img
-            class="photo01"
             src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
             alt="cannebiere"
           />
@@ -274,18 +266,16 @@
         </a>
 
         <div class="blocActivite">
-          <a href="">
+          <a class="cardNotreDame" href="">
             <img
-              class="photo04"
               src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
               alt="cannebiere"
             />
             <h3>Notre-Dame-de-la-Garde</h3>
           </a>
 
-          <a href="">
+          <a class="cardLongchamp" href="">
             <img
-              class="photo05"
               src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
               alt="cannebiere"
             />
@@ -299,22 +289,22 @@
     <!-- Footer -->
 
     <footer>
-      <div>
+      <div class="blocFooter">
         <h3>A propos</h3>
-        <a href="">Foncionnement du site</a> <br />
-        <a href="">Conditions générales de vente</a> <br />
+        <a href="">Foncionnement du site</a> 
+        <a href="">Conditions générales de vente</a> 
         <a href="">Données et confidentialité</a>
       </div>
 
-      <div>
+      <div class="blocFooter">
         <h3>Nos hébergements</h3>
-        <a href="">Charte qualité</a> <br />
+        <a href="">Charte qualité</a> 
         <a href="">Soumettre votre hôtel</a>
       </div>
 
-      <div>
+      <div class="blocFooter">
         <h3>Assistance</h3>
-        <a href="">Centre d'aide</a> <br />
+        <a href="">Centre d'aide</a> 
         <a href="">Nous contacter</a>
       </div>
     </footer>

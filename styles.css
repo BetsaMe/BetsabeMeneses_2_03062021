@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300&display=swap');
 
 
 body {
@@ -37,35 +37,34 @@ header{
 /** Navigation bar**/
 nav{
   display:flex;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0;
-  align-items:center;    
-}
-
-ul{    
-  display: flex;       
-  list-style: none;
+  align-items: center;
   margin: 0;
   padding: 0;
 }
-
-li{
-  padding-left: 65px;
+.logo{
+  width: 80%;
 }
 
+.menuItem{
+  line-height: 50px;
+  margin-left: auto;
+  margin-right: 10px;
+}
 
-
-header nav ul .texteInscrire {  
+.texteInscrire {  
   color: #0065FC ;
   font-weight: bold;
+  margin-left: auto;
+  line-height: 50px;
   }
+
 
 /**Formulaire**/
 
 form{
   display: flex;
   margin-top: 20px;
+  position: relative;
 }
 
 .location{
@@ -84,22 +83,30 @@ form{
  input, button{
   font-family: 'Raleway', sans-serif;  
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .formInput{
-  width: 220px;
+  width: 320px;
   border: solid 2px #E5E5E5;
   padding-left: 15px;
 }
 
-.rechercher{
+form button{
   min-width: 50px;
   background-color: #0065FC;
   border-radius: 0 12px 12px 0; 
   border: none;
-  color: #ffffff;
+  color: #ffffff;  
+  position: absolute;
+  line-height: 48px;
+  left: 290px;
 }
+
+i.fa-search{
+  display: none;
+}
+
 
   /**Filtres**/
 
@@ -113,11 +120,11 @@ form{
   font-weight: bold;
 }
 
-button{
+.filtres button{
   display: flex;
   align-items: center;
   margin-left: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   background-color: transparent;
   border: solid 2px #E5E5E5;
   border-radius: 50px;
@@ -129,7 +136,7 @@ button{
 }
 
 
-button i {
+.filtres button i {
   position: absolute;
   left: -1px;
   background-color: #DEEBFF;
@@ -156,7 +163,7 @@ i.center {
 .plus i{
   width: 20px;
   height: 20px;
-  border-radius: 50%;
+  border-radius: 20px;
   border: solid 1.5px #E5E5E5;
   font-size: 12px;
   color: #0065FC;
@@ -214,6 +221,7 @@ main{
   margin: 15px;
   display: flex;
   flex-wrap: wrap;
+  box-shadow: 4px 4px 10px 0 #E1E5EA;
 }
 
 .cardHebergement img{ 
@@ -272,10 +280,11 @@ aside h2 {
   display: flex;
   background-color: #ffffff;
   width: 100%;
-  height: 150px;
+  height: 10rem;
   padding: 5px;
   margin: 15px 0 15px 0;
-  border-radius: 25px;   
+  border-radius: 25px;
+  box-shadow: 4px 4px 10px 0 #E1E5EA;   
 }
 
 .cardAside img{ 
@@ -310,66 +319,239 @@ aside h2 {
   display: flex;
   flex-wrap: wrap; 
   justify-content: space-between;
-  width: 100%;
-  
+  width: 100%;  
 } 
 
 #activites h2{
-  width: 100%;;
+  width: 100%;
+}
+
+#activites a{
+  border-radius: 20px;
+  background-color: #ffffff;
+  box-shadow: 4px 4px 10px 0 #E1E5EA;
+}
+
+#activites img{
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+#activites h3{
+  margin-left: 15px;
+}
+.cardVieux , .cardCalanque, .blocActivite {
+  width: 23%;
+}
+
+.cardVieux img , .cardCalanque img{
+  width: 100%;
+  height: 390px;
 }
 
 .blocActivite{
-  width: 23%;  
-  min-width: 115px;
-  
+  display: flex;
+  flex-direction: column;
 }
 
-.photo01{
+.cardFort{
+  height: 240px;
   width: 100%;
-  height: 385px;
-  object-fit: cover;
 }
 
-
-.photo02{
+.cardFort img{
   width: 100%;
   height: 180px;
-  object-fit: cover;
 }
 
-.photo03{
+.cardIles{
+  height: 170px;
   width: 100%;
-  height: 120px;
-  object-fit: cover;
-  margin-top: 30px;
+  margin-top: 40px;
 }
-.photo04{
+
+.cardIles img{
+  height: 110px;
   width: 100%;
-  height: 138px;
-  object-fit: cover;
 }
-.photo05{
+
+.cardNotreDame{
+  height: 200px;
   width: 100%;
-  height: 152px;
-  object-fit: cover;
 }
+
+.cardNotreDame img{
+  height: 140px;
+  width: 100%;
+}
+
+.cardLongchamp{
+  height: 210px;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.cardLongchamp img{
+  height: 151px;
+  width: 100%;
+}
+
 
 
 /**Footer**/
+
 footer{
   background-color:#F2F2F2;
   display: flex;
-  justify-content: space-around;
+  margin-top: 35px;
+  padding: 30px 50px 
+}
+ .blocFooter{
+   margin-right:20%;
+ }
+
+footer h3{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.blocFooter{
+  display: flex;
+  flex-direction: column;
+}
+
+footer a{
+  margin-bottom: 10px; 
 }
 
 
-/**Responsive**/
+
+
+
+/**Responsive movil**/
 
 @media screen and (max-width: 480px) { 
+  header{
+    margin: 30px 25px;
+  }
   .filtres p{
     width: 100%;
   }
-  footer{
+  
+  .logo{
+    width: 60%;
+  }
+
+  nav{
+    flex-wrap: wrap;
+  }
+
+  nav :nth-child(1) { order: 1; }
+
+  nav :nth-child(2) {
+    width: 50%;
+    order: 3;
+    margin: 0;
+    text-align: center;
+   }
+
+  nav :nth-child(3) {
+    width: 50%;
+    order: 4; 
+    margin: 0;
+    text-align: center;
+    }
+
+  nav :nth-child(4) {order: 2; }
+
+  h1,header p {
+    text-align: center;
+  }
+
+  form{
+    width: 100%;
+    margin-left: 5px;
+  }
+
+  .formInput{
+    width: 230px;
+  }
+  
+  form button{
+    width: 50px;
+    border-bottom-left-radius: 12px;
+    border-top-left-radius: 12px;
+    left: 260px;
+  } 
+
+  i.fa-search{
+    display: inline-block;
+  }
+  
+  form span{
+    display: none;
+  }
+
+  .filtres p{
+    text-align: start;
+  }
+  
+  .filtres button{
+    margin-left: 5px;
+  }
+  button{
+    font-size: 16px;
+  }
+
+  main{
+    margin:0;
+  }
+
+  aside{
+    width: 100%;
+    border-radius: 0;
+    padding: 0;
+    align-items: center;
+  }
+
+  aside h2{
+    width: 80%;
+  }
+  .cardAside{
+    width: 90%;
+  }
+
+  .sectionGauche{
+  width: 100%;
+  background-color: transparent;
+  flex-direction: column;
+  align-content: center;
+  }
+
+  .cardHebergement{
+    width: 90%;
+  }
+
+
+  #activites{
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cardVieux, .blocActivite, .cardCalanque{
+    width: 90%;
+  }
+
+  #activites img{
+    height: 150px;
+  }
+  #activites a{
+    height: 200px;
+  }
+
+   footer{
     flex-direction: column;
   }
 
@@ -378,34 +560,49 @@ footer{
 
 
 
-@media screen and (max-width: 768px){
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media screen and (max-width: 768px){
   nav{
     display: flex;
     flex-direction: column;
   }
 
-
-  
-}
+} */
 
 
  
 @media screen and  (max-width: 1080px) {
   #hebergement{
     flex-direction: column;  
-    width: 100%;  
-    margin: 0;
   }
+
   aside{
     order: -1;
-    width: 100%;
-    margin: 0;
-    padding: 0;
   }
 
   .sectionGauche{
-    width: 100%;
-    margin: 0;
   }
 
   }
