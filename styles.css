@@ -31,7 +31,7 @@ a{
 
 /* Header */
 header{
-  margin: 45px 50px;
+  margin: 0 50px 45px;
 }
 
 /** Navigation bar**/
@@ -42,21 +42,31 @@ nav{
   padding: 0;
 }
 .logo{
-  width: 80%;
+  width: 63%;
+}
+
+.menuItem , .texteInscrire {
+  line-height: 80px;
+  padding: 10px;
+  border-top-style: solid;
+  border-top-width: 3px;
+  border-top-color: transparent;
 }
 
 .menuItem{
-  line-height: 50px;
-  margin-right: 10px;
+  margin-left: 5%;
 }
 
 .texteInscrire {  
-  color: #0065FC ;
+  color: #0065FC;
   font-weight: bold;
-  line-height: 50px;
   margin-left: auto;
   }
 
+.menuItem:hover , .texteInscrire:hover{
+  color: #0065FC;
+  border-top-color: #0065FC;
+}
 
 /**Formulaire**/
 
@@ -100,6 +110,9 @@ form button{
   position: absolute;
   line-height: 48px;
   left: 290px;
+  cursor: pointer;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 i.fa-search{
@@ -156,11 +169,11 @@ i.center {
 .plus {
   display: flex;
   align-items: center;
-  margin-top: 45px;
+  text-align: left;
 }
 
 .plus i{
-  width: 20px;
+  min-width: 20px;
   height: 20px;
   border-radius: 20px;
   border: solid 1.5px #E5E5E5;
@@ -253,7 +266,10 @@ main{
 
 .firstEtoile{
   margin-left: 15px;
-  
+}
+
+i.etoileGrise{
+  color: #E5E5E5;
 }
 
 /**Aside**/
@@ -309,6 +325,10 @@ aside h2 {
   font-size: 12px;
   color: #0065FC;
   margin-top: 10px;
+}
+
+.textAside .etoileGrise{
+  color: #E5E5E5;
 }
 
 /**Activites**/
@@ -411,7 +431,7 @@ footer{
  .blocFooter{
   display: flex;
   flex-direction: column;
-  margin-right:20%;
+  margin-right:19%;
  }
 
 footer h3{
