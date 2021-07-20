@@ -249,10 +249,10 @@ main{
   box-shadow: 4px 4px 10px 0 #D8DBDE;
 }
 
-/* .cardHebergement:hover{
-  transform: translate(-2px,-6px);
+.cardHebergement:hover{
+  transform: translate(0px,-7px);
   transition: transform .5s;  
-} */
+}
 
 .cardHebergement img{ 
   width: 100%;
@@ -321,7 +321,7 @@ aside h2 {
 }
 
 .cardAside:hover{
-  transform: translate(-2px,-6px);
+  transform: translate(0px,-7px);
   transition: transform .5s;  
 }
 
