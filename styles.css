@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300&display=swap');
 
 
-body {
+body { 
   font-family: 'Raleway', sans-serif;
   margin: 0;
   padding: 0;
@@ -31,7 +31,7 @@ a{
 
 /* Header */
 header{
-  margin: 0 50px 45px;
+  margin: 0 50px 35px;
 }
 
 /** Navigation bar**/
@@ -55,17 +55,14 @@ nav{
   border-top-color: transparent;
   width: 135px;
   text-align: center;
-}
-
-.menuItem{
-  margin-left: 20px; 
+  margin-left: auto;
+  padding: 40px 10px 0;
 }
 
 .texteInscrire { 
   color: #0065FC;
-  font-weight: bold;
-  margin-left: auto;
-  }
+  font-weight: bold;  
+}
 
 .menuItem:hover , .texteInscrire:hover{
   color: #0065FC;
@@ -82,7 +79,7 @@ form{
 
 .location{
   background-color: #E5E5E5;
-  border-radius: 12px 0 0 12px;    
+  border-radius: 15px 0 0 15px;    
   text-align: center;
   min-width: 50px;  
   height: 50px;
@@ -108,7 +105,7 @@ form{
 form button{
   min-width: 50px;
   background-color: #0065FC;
-  border-radius: 0 12px 12px 0; 
+  border-radius: 0 15px 15px 0; 
   border: none;
   color: #ffffff;  
   position: absolute;
@@ -117,6 +114,10 @@ form button{
   cursor: pointer;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+form button:hover{
+  background-color: #075BD8;
 }
 
 i.fa-search{
@@ -151,6 +152,9 @@ i.fa-search{
   position: relative;
 }
 
+.filtres button:hover{
+  background-color: #F2F2F2;
+}
 
 .filtres button i {
   position: absolute;
@@ -187,7 +191,7 @@ i.center {
 }
 
 
-/******Main section******/
+/************Main section************/
 
 /**Hebergements**/
 
@@ -211,19 +215,20 @@ main{
   border-radius: 20px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-content:center;
+  justify-content:space-around;
+  align-items: center;
   margin-right: 40px;
   width: 65%;
-  padding: 35px 10px 35px 10px;
+  padding: 40px 10px 20px;
 }
 
 .sectionGauche h2 {
   width: 93%;
+  margin: 0;
 }
 
 .aficher {
-  width: 93%;
+  width: 90%;
   font-size: 18px;
   font-weight: bold;
   margin-top: 25px;
@@ -237,7 +242,12 @@ main{
   margin: 15px;
   display: flex;
   flex-wrap: wrap;
-  box-shadow: 4px 4px 10px 0 #E1E5EA;
+  box-shadow: 4px 4px 10px 0 #D8DBDE;
+}
+
+.cardHebergement:hover{
+  transform: translate(-2px,-6px);
+  transition: transform .5s;  
 }
 
 .cardHebergement img{ 
@@ -253,13 +263,14 @@ main{
   width: 100%;
 }
 
-.cardHebergement p {
-  margin-top: 4px;
-}
-
 .cardHebergement h3{
   margin-top: 8px;
   margin-bottom: 4px;
+}
+
+.cardHebergement p {
+  margin-top: 4px;
+  margin-bottom: 6px;
 }
 
 .cardHebergement i{
@@ -294,16 +305,20 @@ aside h2 {
   justify-content: space-between;
 }
 
-
 .cardAside{
   display: flex;
   background-color: #ffffff;
   width: 100%;
-  height: 150px;
+  height: 25%;
   padding: 5px;
   margin: 15px 0;
   border-radius: 25px;
-  box-shadow: 4px 4px 10px 0 #E1E5EA;   
+  box-shadow: 4px 4px 10px 0 #D8DBDE; 
+}
+
+.cardAside:hover{
+  transform: translate(-2px,-6px);
+  transition: transform .5s;  
 }
 
 .cardAside img{ 
@@ -321,12 +336,13 @@ aside h2 {
 
 .textAside h3, .textAside p{
   width: 100%;
-  margin:18px 0 9px 9px;
+  margin: 9px 20px 5px;
 }
 
 .textAside i{
   font-size: 12px;
   color: #0065FC;
+  margin-top: 40px;
 }
 
 .textAside .etoileGrise{
@@ -334,7 +350,6 @@ aside h2 {
 }
 
 /**Activites**/
-
 
 #activites{
   display: flex;
@@ -354,7 +369,7 @@ aside h2 {
 #activites a{
   border-radius: 20px;
   background-color: #ffffff;
-  box-shadow: 4px 4px 10px 0 #E1E5EA;
+  box-shadow: 4px 4px 10px 0 #D8DBDE;
 }
 
 #activites img{
@@ -366,7 +381,6 @@ aside h2 {
 #activites h3{
   margin-left: 15px;
 }
-
 
 .cardVieux img , .cardCalanque img{
   width: 100%;
@@ -419,8 +433,6 @@ aside h2 {
   width: 100%;
 }
 
-
-
 /**Footer**/
 
 footer{
@@ -445,7 +457,7 @@ footer a{
   margin-bottom: 10px; 
 }
 
-/***************************laptop**************************/
+/**************************Responsive large devices**************************/
 
 
 @media screen and  (max-width: 1080px) {
@@ -455,22 +467,20 @@ footer a{
 
   aside{
     order: -1;
-  }
-
-  aside{
     width: 100%;
-    padding: 0;
+    padding: 20px 0;
+    align-items: center;
   }
 
   .cardAside{
     width: 60%;
-    height: 170px;
+    height: 200px;
   }
   
   .sectionGauche{
     width: 100%;
     margin: 20px 0 ;
-    padding: 0 0 10px 0;
+    padding: 20px 0 10px 0;
   }
 
   aside h2 , .cardAside {
@@ -502,41 +512,32 @@ footer a{
     border-bottom-style: solid;
     border-bottom-width: 3px;
     border-bottom-color: transparent;
-    margin: 0;
+    padding: 30px 0 ;
   }
 
   .texteInscrire:hover, .menuItem:hover{
     border-bottom-color:#0065FC ;
   }
 
-  aside{
-    padding: 0;
-    align-items: center;
-  }
-
-   .sectionGauche h2{
-    width: 80%;
+  .sectionGauche h2{
+    width: 90%;
   }
 
   .sectionGauche{
-    padding: 0 0 10px 0;
+    padding: 20px 0;
   }
   
   .cardHebergement{
     width: 40%;
   }
 
-  #activites{
-    justify-content: center;
-  }
-
   .cardVieux , .cardCalanque, .blocActivite {
-    width: 44%;
-    margin: 30px 15px;
+    width: 45%;
+    margin: 15px;
   }
 
   footer{
-    margin:0;
+    margin: 20px 0 0;
     padding:0;
   }
 
@@ -545,6 +546,7 @@ footer a{
   }
 
 }
+
 
 /***************************Responsive movil**************************/
 
@@ -593,11 +595,12 @@ footer a{
     text-align: center;
   }
 
-  /* form */
-
-  form{
-    width: 100%;
+  .menuItem{
+    border-bottom-color:#F2F2F2;
   }
+
+
+  /* form */
 
   .formInput{
     width: 230px;
@@ -605,8 +608,8 @@ footer a{
   
   form button{
     width: 50px;
-    border-bottom-left-radius: 12px;
-    border-top-left-radius: 12px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
     left: 260px;
   } 
 
@@ -647,10 +650,11 @@ footer a{
 
   aside{
     border-radius: 0;
-    padding: 0 0 20px 0;
+    padding: 0 0 20px;
   }
 
   .cardAside{
+    height: 150px;
     width: 90%;
     margin: 8px 0;
   }
@@ -660,9 +664,9 @@ footer a{
   }
 
   .sectionGauche{
-  padding: 0;
-  background-color: transparent;
-  justify-items: center;
+    padding: 10px 0;
+    background-color: transparent;
+    justify-items: center;
   }
 
   .cardHebergement{
@@ -673,14 +677,13 @@ footer a{
   /* Activités*/
   
   #activites{
-  width: 100%;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 20px;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
   }
 
   #activites h2{
-    width: 80%;
+    width: 90%;
   }
 
   .cardVieux, .blocActivite, .cardCalanque{
@@ -713,7 +716,6 @@ footer a{
     margin:10px 15px 10px;
   }
 
-  
 }
 
 
