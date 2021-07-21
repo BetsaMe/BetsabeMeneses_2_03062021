@@ -129,7 +129,7 @@ i.fa-search{
 }
 
 
-  /**Filtres**/
+/**Filtres**/
 
 .filtres {
   display: flex;
@@ -170,6 +170,8 @@ i.fa-search{
   width: 50px;
   border-radius: 50px;
 }
+
+
 
 i.center {
   display: flex;
@@ -340,7 +342,7 @@ aside h2 {
 
 .textAside h3, .textAside p{
   width: 100%;
-  margin: 9px 20px 5px;
+  margin: 10px 8px 5px 15px;
 }
 
 .textAside i{
@@ -358,7 +360,7 @@ aside h2 {
 #activites{
   display: flex;
   flex-wrap: wrap; 
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;  
 } 
 
@@ -536,7 +538,7 @@ footer a{
   }
 
   .cardVieux , .cardCalanque, .blocActivite {
-    width: 45%;
+    width: 40%;
     margin: 15px;
   }
 
