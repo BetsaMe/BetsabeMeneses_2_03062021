@@ -33,6 +33,11 @@ a:link {
   color: #000000;
 }
 
+aside a:visited, #hebergement a:visited, #activites a:visited{
+  text-decoration: none;
+  color: #000000;
+}
+
 /* Header */
 header{
   margin: 0 50px 35px;
@@ -128,7 +133,6 @@ i.fa-search{
   display: none;
 }
 
-
 /**Filtres**/
 
 .filtres {
@@ -170,8 +174,6 @@ i.fa-search{
   width: 50px;
   border-radius: 50px;
 }
-
-
 
 i.center {
   display: flex;
@@ -300,6 +302,7 @@ aside{
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content:start;
   width: 30%;
   padding: 35px 40px ;
   border-radius: 20px;
@@ -315,7 +318,8 @@ aside h2 {
   display: flex;
   background-color: #ffffff;
   width: 100%;
-  height: 25%;
+  min-width: 319px;
+  height: 145px;
   padding: 5px;
   margin: 15px 0;
   border-radius: 25px;
