@@ -13,7 +13,7 @@ Basic layout of a vacation booking website, created as the second project of the
 
 ## Authors
 
-* Code: **Billie Thompson** Design: **Openclassrooms** 
+* Code: **Betsabé M** Design: **Openclassrooms** 
 
 
 ## Acknowledgments
